@@ -73,6 +73,12 @@ public class UserProfileActivity extends AppCompatActivity {
         }
 
         profileImage.setOnClickListener(v -> openImagePicker());
+// Find the Login button and set click listener
+        Button btnLogin = findViewById(R.id.btnLogout);
+        btnLogin.setOnClickListener(v -> {
+            Intent intent = new Intent(UserProfileActivity.this, LoginActivity.class);
+            startActivity(intent);
+        });
 
         btnSave.setOnClickListener(v -> {
             try {
