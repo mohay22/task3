@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'com.google.gms.google-services'
+    id "org.sonarqube" version "4.3.1.3277"
 }
 
 android {
@@ -22,7 +23,14 @@ android {
         }
     }
 }
-
+sonarqube {
+    properties {
+        property("sonar.projectKey", "task3")
+        property("sonar.projectName", "task3")
+        property("sonar.host.url", "http://localhost:9000")
+        property("sonar.token", "squ_360d2d10427c65e034a38ec8ea4c181a5a978504")
+    }
+}
 dependencies {
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
