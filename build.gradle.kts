@@ -12,3 +12,11 @@ plugins {
     id("org.sonarqube") version "4.3.1.3277"
 
 }
+
+sonarqube {
+    properties {
+        property ("sonar.projectKey", "task3")
+        property ("sonar.host.url", "http://localhost:9000")
+        property ("sonar.token", "sqp_3dadba10f4bc994f5b183b604486b1764520e6e2")
+    }
+}
