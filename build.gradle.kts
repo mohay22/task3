@@ -8,7 +8,6 @@ buildscript {
 plugins {
     id("com.android.application") version "8.5.2" apply false
     id("com.android.library") version "8.5.2" apply false
-
     id("org.sonarqube") version "4.3.1.3277"
 
 }
@@ -17,6 +16,6 @@ sonarqube {
     properties {
         property ("sonar.projectKey", "task3")
         property ("sonar.host.url", "http://localhost:9000")
-        property ("sonar.token", "sqp_3dadba10f4bc994f5b183b604486b1764520e6e2")
+        property ("sonar.token", "sqp_1a77f0bc416924c98eb07e928a4a60601b391132")
     }
 }
